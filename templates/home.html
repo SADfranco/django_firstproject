@@ -9,15 +9,13 @@ textarea {
 <body>
 <h1>My Firts Project</h1>
 
-<label for="w3review">Sent me message</label>
-<br>
-<br>
-<textarea id="w3review" name="w3review" rows="4" cols="50">
+<form action="{% url 'reverse' %}">
+<textarea name="usertext" rows="4" cols="50">
 Input your text here
 </textarea>
 <br>
 <input type="submit" value="Reverse!">
-
+</form>
 
 </body>
 </html>

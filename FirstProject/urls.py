@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),
-    path('', views.mainpage)
+    path('', views.mainpage),
+    path('reversedd/', views.reverse, name='reverse'),
 ]
